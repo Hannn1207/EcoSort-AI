@@ -1,0 +1,6 @@
+{
+  "name": "EcoSort AI",
+  "description": "An intelligent waste classification and recycling assistant that helps users identify waste types from uploaded images and provides recycling recommendations using Google Gemini AI.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}

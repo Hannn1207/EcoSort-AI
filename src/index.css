@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", sans-serif;
+  
+  --color-eco-50: #ecfdf5;
+  --color-eco-100: #d1fae5;
+  --color-eco-200: #a7f3d0;
+  --color-eco-300: #6ee7b7;
+  --color-eco-400: #34d399;
+  --color-eco-500: #10b981;
+  --color-eco-600: #059669;
+  --color-eco-700: #047857;
+  --color-eco-800: #065f46;
+  --color-eco-900: #064e3b;
+
+  --color-slate-950: #020617;
+}
+
+@layer base {
+  body {
+    @apply bg-slate-950 text-slate-200 antialiased;
+  }
+}
+
+.glass {
+  @apply bg-slate-900/40 backdrop-blur-xl border border-white/10 shadow-2xl;
+}
+
+.glass-emerald {
+  @apply bg-eco-500/5 backdrop-blur-md border border-eco-500/20 shadow-xl shadow-eco-500/5;
+}
+
+.btn-primary {
+  @apply bg-eco-500 hover:bg-eco-400 text-slate-950 font-bold px-8 py-3 rounded-xl shadow-xl shadow-eco-500/20 transition-all active:scale-[0.98];
+}
+
+.card-gradient {
+  @apply bg-gradient-to-br from-slate-900/80 to-slate-800/40 border border-white/10;
+}
+
